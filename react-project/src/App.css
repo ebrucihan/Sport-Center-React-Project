@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box; /* Set box-sizing to border-box for all elements */
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+:root {
+  --text-color: #f5f8f3; /* Define primary text color */
+  --sc-txtcolor: #365194; /* Define secondary text color */
+  --main-color: black; /* Define main color */
+}
+
+body {
+  overflow-x: hidden; /* Hide horizontal overflow */
+  margin: 0; /* Remove default margin */
+  font-family: "Open Sans", sans-serif; /* Set font for the body */
+}

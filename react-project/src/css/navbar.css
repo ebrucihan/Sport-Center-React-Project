@@ -1,0 +1,58 @@
+nav {
+  display: flex; /* Use flexbox for navigation layout */
+  justify-content: space-between; /* Space items evenly */
+  padding: 0.3rem 20% 0.3rem 16%; /* Padding for the navbar */
+  align-items: center; /* Center items vertically */
+  position: fixed; /* Fix navbar at the top */
+  width: 100%; /* Full width */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  z-index: 100; /* Ensure navbar is above other content */
+}
+
+.scrolled {
+  background-color: #355592; /* Change background color when scrolled */
+}
+
+.bar {
+  display: flex; /* Use flexbox for bar layout */
+  align-items: center; /* Center items vertically in the bar */
+}
+
+.logo img {
+  height: 60px; /* Set logo image height */
+}
+
+.bgColor {
+  background-color: #355592; /* Set background color for the navbar */
+  transition: all 1s; /* Smooth transition for background color */
+  height: 72px; /* Set height of the navbar */
+}
+
+.menu-btn,
+.menu-icon {
+  display: none; /* Hide menu button and icon */
+}
+
+.bar a {
+  font-size: 1rem; /* Set font size for links */
+  margin-right: 20px; /* Margin to the right of each link */
+  color: var(--text-color); /* Use defined text color */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bolder; /* Make font bolder */
+}
+
+.bar button {
+  background-color: #f39f15; /* Set button background color */
+  border-radius: 4px; /* Round button corners */
+  border: none; /* Remove default border */
+  height: 1.5rem; /* Set button height */
+  width: 5rem; /* Set button width */
+  margin-left: 5px; /* Margin to the left of the button */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.bar button p {
+  font-size: 14px; /* Set font size for button text */
+  font-weight: 800; /* Set font weight for button text */
+}

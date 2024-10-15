@@ -1,0 +1,50 @@
+/*Purchase*/
+
+.purchase-container {
+  padding-top: 3rem; /* Padding at the top of the purchase container */
+  padding-bottom: 2rem; /* Padding at the bottom of the purchase container */
+}
+
+.purchase-container h2 {
+  text-align: center; /* Center the heading text */
+  color: var(--sc-txtcolor); /* Set color for the heading */
+  font-weight: 700; /* Set font weight for the heading */
+}
+
+.purchase-container p {
+  text-align: center; /* Center the paragraph text */
+  color: var(--main-color); /* Set color for the paragraph */
+  font-weight: 700; /* Set font weight for the paragraph */
+}
+
+.equipment-container {
+  padding-top: 2rem; /* Padding at the top of the equipment container */
+  display: flex; /* Enable flexbox layout for equipment items */
+  gap: 1.5rem; /* Space between equipment cards */
+  width: 70%; /* Set width for the equipment container */
+  margin: auto; /* Center the equipment container horizontally */
+}
+
+.equipment-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Shadow effect for equipment cards */
+  border-radius: 5px; /* Rounded corners for equipment cards */
+}
+
+.equipment-card img {
+  width: 100%; /* Set image width to fill the equipment card */
+}
+
+.card-layer {
+  text-align: center; /* Center text inside the card layer */
+  padding-bottom: 1%; /* Padding at the bottom of the card layer */
+}
+
+.card-layer p > span {
+  text-decoration: line-through; /* Strikethrough text for the span inside paragraph */
+}
+
+.card-layer p > i {
+  float: left; /* Align icon to the left */
+  margin-top: 5px; /* Margin at the top of the icon */
+  margin-left: 10px; /* Margin on the left of the icon */
+}

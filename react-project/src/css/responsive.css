@@ -1,0 +1,180 @@
+/* Responsive */
+@media screen and (max-width: 576px) {
+  html,
+  body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    width: 100%; /* Set width to 100% */
+    height: 100%; /* Set height to 100% */
+    overflow-x: hidden; /* Hide horizontal overflow */
+  }
+
+  img,
+  video {
+    max-width: 100%; /* Ensure images and videos do not exceed container width */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .menu-btn {
+    display: none; /* Hide menu button on small screens */
+  }
+
+  .menu-icon {
+    display: block; /* Show menu icon */
+    font-size: 3rem; /* Set font size for the icon */
+    color: var(--text-color); /* Set text color */
+    cursor: pointer; /* Change cursor to pointer */
+  }
+
+  .bar {
+    position: absolute; /* Position the bar absolutely */
+    transform: translateY(-400px); /* Move bar off-screen */
+  }
+
+  .navbar-container {
+    padding: 5%; /* Add padding to navbar container */
+  }
+
+  .menu-btn:checked ~ .bar {
+    display: grid; /* Display bar as a grid */
+    justify-content: end; /* Align items to the end */
+    top: 100%; /* Position below the button */
+    left: 0; /* Align to the left */
+    width: 100%; /* Set full width */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.2); /* Add shadow */
+    transform: translateY(0); /* Move bar into view */
+    transition: 0.2s linear; /* Smooth transition */
+  }
+
+  .menu-btn:checked ~ .bar a {
+    font-size: 1rem; /* Set font size for menu links */
+    margin: 2rem 0; /* Add margin for spacing */
+  }
+
+  .home {
+    padding: 9rem 0% 9% 0%; /* Set padding for the home section */
+  }
+
+  .sign {
+    width: 100%; /* Set width for sign section */
+    display: block; /* Display as block */
+  }
+
+  .details {
+    margin-left: 0; /* Remove left margin */
+    margin-top: 0.5rem; /* Add top margin */
+    display: block; /* Display as block */
+    width: 100%; /* Set width to 100% */
+  }
+
+  .flex-container {
+    display: block; /* Display flex container as block */
+    width: 100%; /* Set width to 100% */
+  }
+
+  .flex-container > div {
+    display: block; /* Display child divs as block */
+    width: 100%; /* Set width to 100% */
+  }
+
+  .class-container {
+    display: block; /* Display class container as block */
+    width: 90%; /* Set width to 90% */
+  }
+
+  #features-container {
+    display: block; /* Display features container as block */
+    width: 100%; /* Set width to 100% */
+  }
+
+  #features-container img {
+    display: block; /* Display images as block */
+    width: 100%; /* Set width to 100% */
+  }
+
+  .bmi-container {
+    display: block; /* Display BMI container as block */
+    width: 100%; /* Set width to 100% */
+  }
+
+  .calculate-container {
+    width: 90%; /* Set width to 90% */
+  }
+
+  .img-container {
+    display: block; /* Display image container as block */
+    width: 100%; /* Set width to 100% */
+    padding-top: 2rem; /* Add top padding */
+  }
+
+  .img-container img {
+    display: block; /* Display images as block */
+    width: 100%; /* Set width to 100% */
+  }
+
+  .trainer-container {
+    display: block; /* Display trainer container as block */
+    width: 100%; /* Set width to 100% */
+  }
+
+  .trainers-container {
+    display: block; /* Display trainers container as block */
+    width: 60%; /* Set width to 60% */
+  }
+
+  .trainer-portfolio {
+    display: block; /* Display trainer portfolio as block */
+    width: 100%; /* Set width to 100% */
+    margin-bottom: 5rem; /* Add bottom margin */
+  }
+
+  .purchase-container {
+    display: block; /* Display purchase container as block */
+    width: 100%; /* Set width to 100% */
+  }
+
+  .equipment-container {
+    display: block; /* Display equipment container as block */
+    width: 80%; /* Set width to 80% */
+  }
+
+  .equipment-card {
+    margin-bottom: 2rem; /* Add bottom margin for equipment cards */
+  }
+
+  .review-container {
+    display: block; /* Display review container as block */
+    width: 100%; /* Set width to 100% */
+  }
+
+  .client-container {
+    display: block; /* Display client container as block */
+    width: 90%; /* Set width to 90% */
+    padding-bottom: 0.5rem; /* Add bottom padding */
+  }
+
+  .review {
+    margin-bottom: 4rem; /* Add bottom margin for reviews */
+  }
+
+  .message-container {
+    display: block; /* Display message container as block */
+    width: 80%; /* Set width to 80% */
+  }
+
+  .footer {
+    display: block; /* Display footer as block */
+    width: 90%; /* Set width to 90% */
+  }
+
+  .footer-container {
+    display: flex; /* Display footer container as flex */
+    width: 90%; /* Set width to 90% */
+  }
+
+  .googleMap iframe {
+    padding-top: 2rem; /* Add top padding for Google Map */
+    width: 100%; /* Set width to 100% */
+  }
+}

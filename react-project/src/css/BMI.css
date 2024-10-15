@@ -1,0 +1,52 @@
+/*BMI*/
+
+.bmi-container {
+  display: flex; /* Enable flexbox layout for the BMI container */
+  width: 75%; /* Set width of the BMI container */
+  margin: auto; /* Center the container horizontally */
+  gap: 10%; /* Space between the flex items */
+  padding-bottom: 2rem; /* Space at the bottom of the container */
+}
+
+.calculate-container {
+  width: 50%; /* Set width for the calculation section */
+  margin: auto; /* Center the calculation section horizontally */
+}
+
+.calculate-container h1 {
+  color: var(--sc-txtcolor); /* Set heading color */
+  font-weight: 800; /* Set font weight for the heading */
+}
+
+.calculate-container p {
+  font-weight: 700; /* Set font weight for paragraph text */
+  text-align: start; /* Align paragraph text to the start */
+}
+
+.calculate-container input {
+  border-radius: 5px; /* Rounded corners for input fields */
+  border: 2px solid black; /* Black border for input fields */
+}
+
+.calculate-container span {
+  padding-left: 0.3rem; /* Space on the left of the span element */
+}
+
+.img-container img {
+  width: 100%; /* Set image width to fill the container */
+}
+
+.img-container {
+  text-align: center; /* Center the content inside the image container */
+  position: relative; /* Positioning context for absolute elements */
+}
+
+.triangle {
+  position: absolute; /* Position triangle relative to the img-container */
+  width: 0; /* No width for the triangle */
+  height: 0; /* No height for the triangle */
+  border: 15px solid transparent; /* Create transparent borders for triangle */
+  border-top: 0; /* No top border for the triangle */
+  border-bottom: 30px solid #f39f15; /* Set bottom border color for triangle */
+  left: 6%; /* Position triangle to the left */
+}

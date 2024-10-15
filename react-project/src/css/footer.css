@@ -1,0 +1,68 @@
+/*Footer*/
+
+footer {
+  background-color: var(
+    --sc-txtcolor
+  ); /* Set background color for the footer */
+}
+
+.footer {
+  display: flex; /* Enable flexbox layout for the footer */
+  width: 70%; /* Set width for the footer */
+  margin: auto; /* Center the footer horizontally */
+  flex-direction: column; /* Arrange child elements in a column */
+  color: white; /* Set text color to white */
+  padding-bottom: 1rem; /* Padding at the bottom of the footer */
+}
+
+.footer-container {
+  display: flex; /* Enable flexbox layout for the footer container */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-between; /* Distribute space between child elements */
+  width: 60%; /* Set width for the footer container */
+  margin: auto; /* Center the footer container horizontally */
+}
+
+.footer-container a {
+  text-decoration: none; /* Remove underline from links */
+  color: white; /* Set link color to white */
+}
+
+.info {
+  display: flex; /* Enable flexbox layout for info section */
+  flex-direction: column; /* Arrange child elements in a column */
+}
+
+.links {
+  display: flex; /* Enable flexbox layout for links section */
+  flex-direction: column; /* Arrange child elements in a column */
+}
+
+#height {
+  border: 1px solid rgba(0, 0, 0, 0.2); /* Set border for height input */
+  transition: border-color 0.5s ease; /* Smooth transition for border color change */
+  margin-right: 0.43rem; /* Right margin for spacing */
+}
+
+#height:hover,
+#weight:hover {
+  border-color: rgb(7, 91, 102); /* Change border color on hover */
+}
+
+#weight {
+  border: 1px solid rgba(0, 0, 0, 0.2); /* Set border for weight input */
+  transition: border-color 0.5s ease; /* Smooth transition for border color change */
+  margin-right: 0.43rem; /* Right margin for spacing */
+}
+
+#textname,
+#ymail {
+  border: 1px solid rgba(0, 0, 0, 0.2); /* Set border for text name and email inputs */
+  transition: border-color 0.5s ease; /* Smooth transition for border color change */
+  margin-right: 0.43rem; /* Right margin for spacing */
+}
+
+#textname:hover,
+#ymail:hover {
+  border-color: rgb(0, 0, 0); /* Change border color on hover */
+}

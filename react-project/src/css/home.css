@@ -1,0 +1,124 @@
+/*Home */
+
+#home {
+  background-size: cover; /* Cover the entire background */
+  background-position: center; /* Center the background image */
+  min-height: 100vh; /* Minimum height of the home section */
+}
+
+.home {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  color: var(--text-color); /* Use defined text color */
+  padding: 12rem 20% 2% 16%; /* Padding for home section */
+  position: relative; /* Position relative for absolute elements */
+}
+
+.background-image {
+  position: absolute; /* Position background image absolutely */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  object-fit: cover; /* Cover the area without distortion */
+  z-index: -1; /* Place behind other elements */
+}
+
+.power {
+  background-color: #325494; /* Button background color */
+  border-radius: 4px; /* Round button corners */
+  border: none; /* Remove default border */
+  height: 40px; /* Set button height */
+  color: var(--text-color); /* Use defined text color */
+  width: 10rem; /* Set button width */
+  text-shadow: 2px 2px 4px #000000; /* Add text shadow for visibility */
+  font-weight: bolder; /* Make font bolder */
+  text-align: center; /* Center text in button */
+  padding-top: 0.3rem; /* Add padding at the top */
+  font-size: 1.5rem; /* Set font size for button text */
+  transform: translateY(-8px); /* Slightly raise the button */
+}
+
+.container h1 {
+  font-size: 80px; /* Set font size for the heading */
+  font-weight: 700; /* Set font weight for the heading */
+  text-shadow: 2px 2px 4px #000000; /* Add text shadow for visibility */
+  transform: translateY(-20px); /* Slightly raise the heading */
+}
+
+.container > p {
+  top: 0; /* Align to the top */
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  font-size: 23px; /* Set font size for paragraph */
+  font-weight: 700; /* Set font weight for paragraph */
+  padding: 1rem; /* Add padding to paragraph */
+  transform: translateY(-50px); /* Slightly raise the paragraph */
+}
+
+.sign {
+  background-color: #355592; /* Button background color */
+  border-radius: 4px; /* Round button corners */
+  border: none; /* Remove default border */
+  width: 7rem; /* Set button width */
+  height: 3rem; /* Set button height */
+  color: var(--text-color); /* Use defined text color */
+  font-size: 20px; /* Set font size for button text */
+  font-weight: 800; /* Set font weight for button text */
+  transform: translateY(-50px) translateX(13px); /* Slightly raise and shift the button */
+}
+
+.details {
+  border-radius: 4px; /* Round corners of details box */
+  border: 2px solid white; /* White border around details box */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  height: 3rem; /* Set height for details box */
+  width: 7rem; /* Set width for details box */
+  color: var(--text-color); /* Use defined text color */
+  font-size: 20px; /* Set font size for details text */
+  font-weight: 700; /* Set font weight for details text */
+  margin-left: 2rem; /* Margin to the left of details box */
+  transform: translateY(-50px) translateX(10px); /* Slightly raise and shift the box */
+}
+
+.sign:hover {
+  background-color: #2a4573; /* Change background color on hover */
+}
+
+.details:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Darken background on hover */
+}
+
+/*Home end */
+
+/* flex box */
+.flex-container {
+  display: flex; /* Enable flexbox layout */
+  background-color: #f1f8ff; /* Set background color for the container */
+  flex-direction: row; /* Arrange flex items in a row */
+  justify-content: center; /* Center items horizontally within the container */
+  padding: 1.5rem; /* Add padding around the container */
+}
+
+.flex-container > div {
+  background-color: white; /* Set background color for flex items */
+  margin: 10px; /* Add margin around each flex item */
+  padding: 20px; /* Add padding inside each flex item */
+  font-size: 30px; /* Set font size for text within flex items */
+  width: 12rem; /* Set width of each flex item */
+  height: 7rem; /* Set height of each flex item */
+}
+
+.flex-container > div > p {
+  color: #325494; /* Set text color for paragraph within flex items */
+  font-weight: 800; /* Set font weight for paragraph text */
+  text-align: center; /* Center text within paragraph */
+  font-size: 21px; /* Set font size for paragraph text */
+}
+
+.flex-container > div > p > span {
+  color: black; /* Set text color for span within paragraph */
+  font-weight: 800; /* Set font weight for span text */
+}
+
+/* flex box end */

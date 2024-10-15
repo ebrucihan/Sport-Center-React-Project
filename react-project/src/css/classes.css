@@ -1,0 +1,114 @@
+/*Classes*/
+
+.classes {
+  position: relative; /* Positioning context for absolute elements */
+}
+
+.class-container {
+  padding-bottom: 5%; /* Space at the bottom of the container */
+  width: 60%; /* Set width of the class container */
+  margin: auto; /* Center the container horizontally */
+}
+
+.line {
+  border: solid 3px #f39f15; /* Set border style and color */
+  color: #f39f15; /* Set text color */
+  width: 8%; /* Set width of the line */
+  margin: auto; /* Center the line */
+  border-radius: 100px; /* Rounded corners */
+  margin-top: 1rem; /* Space above the line */
+  margin-bottom: 1rem; /* Space below the line */
+}
+
+.bg-shape {
+  position: absolute; /* Position the shape relative to the parent */
+  right: 0; /* Align to the right */
+  z-index: -1; /* Place behind other elements */
+  height: 100%; /* Full height of the parent */
+  width: 60%; /* Set width of the background shape */
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 100%,
+    25% 100%,
+    12.5% 50%
+  ); /* Create a custom shape */
+  background: #f6f6f6; /* Set background color */
+}
+
+.class-container h2 {
+  padding-top: 2rem; /* Space above the heading */
+  text-align: center; /* Center the heading text */
+  color: var(--sc-txtcolor); /* Set heading color */
+  font-weight: 700; /* Set font weight for the heading */
+}
+
+.classes p {
+  text-align: center; /* Center paragraph text */
+  color: var(--main-color); /* Set paragraph color */
+  font-weight: 700; /* Set font weight for the paragraph */
+}
+
+.button-container {
+  display: flex; /* Enable flexbox layout for buttons */
+  justify-content: center; /* Center buttons horizontally */
+  gap: 20px; /* Space between buttons */
+  margin-top: 2rem; /* Space above the button container */
+}
+
+.button-container button {
+  background-color: var(--sc-txtcolor); /* Set button background color */
+  color: var(--text-color); /* Set button text color */
+  font-weight: 800; /* Set font weight for button text */
+  border-radius: 5px; /* Rounded corners for buttons */
+  width: 150px; /* Set width of buttons */
+  height: 50px; /* Set height of buttons */
+  border: none; /* Remove border */
+  position: relative; /* Positioning context for pseudo-elements */
+  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+.button-container button.selected {
+  background-color: #f39f15; /* Set selected button color */
+}
+
+.button-container button.selected::after {
+  content: ""; /* Create an empty content for the triangle */
+  position: absolute; /* Position triangle relative to the button */
+  bottom: -10px; /* Position below the button */
+  left: 50%; /* Center the triangle horizontally */
+  transform: translateX(-50%); /* Adjust positioning to center */
+  width: 0; /* No width for triangle */
+  height: 0; /* No height for triangle */
+  border-left: 10px solid transparent; /* Left side of the triangle */
+  border-right: 10px solid transparent; /* Right side of the triangle */
+  border-top: 10px solid #f39f15; /* Top side color of the triangle */
+}
+
+.button-container button:hover {
+  background-color: #f39f15; /* Change background color on hover */
+}
+
+#features-container {
+  padding-top: 1.5rem; /* Space above features container */
+  display: flex; /* Enable flexbox layout for features */
+  gap: 10%; /* Space between features */
+  align-items: center; /* Center items vertically */
+}
+
+#features-container h6 {
+  padding-top: 2rem; /* Space above heading */
+  font-weight: 800; /* Set font weight for heading */
+  text-align: start; /* Align heading to the start */
+  font-size: 1.5rem; /* Set font size for heading */
+}
+
+#features-container p {
+  font-weight: 600; /* Set font weight for paragraph */
+  text-align: start; /* Align paragraph to the start */
+  margin-top: 1.5rem; /* Space above paragraph */
+}
+
+#features-container img {
+  width: 50%; /* Set width of images in the features container */
+}

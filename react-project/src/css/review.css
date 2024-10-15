@@ -1,0 +1,83 @@
+/*Review*/
+
+.review-container {
+  background-color: #f1f8ff; /* Light background color for the review section */
+  padding-top: 3rem; /* Padding at the top of the review container */
+}
+
+.review-container h2 {
+  text-align: center; /* Center the heading text */
+  color: var(--sc-txtcolor); /* Set color for the heading */
+  font-weight: 700; /* Set font weight for the heading */
+}
+
+.review-container p {
+  text-align: center; /* Center the paragraph text */
+  color: var(--main-color); /* Set color for the paragraph */
+  font-weight: 650; /* Set font weight for the paragraph */
+}
+
+.client-container {
+  display: flex; /* Enable flexbox layout for client items */
+  width: 70%; /* Set width for the client container */
+  margin: auto; /* Center the client container horizontally */
+  gap: 5rem; /* Space between client items */
+  padding-top: 2rem; /* Padding at the top of the client container */
+  padding-bottom: 2rem; /* Padding at the bottom of the client container */
+}
+
+.client-container p > span {
+  font-weight: 800; /* Set font weight for the span inside paragraph */
+}
+
+.client {
+  display: flex; /* Enable flexbox layout for client elements */
+  gap: 0.5rem; /* Space between client name and image */
+  padding-bottom: 1rem; /* Padding at the bottom of the client element */
+}
+
+.client img {
+  border-radius: 50%; /* Round the client's image */
+  width: 60px; /* Set width for the client's image */
+}
+
+.comment {
+  position: relative; /* Set position relative for comment elements */
+  background-color: rgba(53, 85, 146, 1); /* Background color for comment */
+}
+
+.comment::after {
+  position: absolute; /* Position for the after pseudo-element */
+  content: ""; /* Empty content for the after pseudo-element */
+  clip-path: polygon(
+    100% 0,
+    1% 0,
+    100% 100%
+  ); /* Clip path for the triangular shape */
+  background-color: #788ec2a1; /* Background color for the triangular shape */
+  width: 2rem; /* Width for the triangular shape */
+  height: 2rem; /* Height for the triangular shape */
+  top: 100%; /* Position below the comment */
+  left: 0; /* Align to the left */
+}
+
+.comment::before {
+  position: absolute; /* Position for the before pseudo-element */
+  content: ""; /* Empty content for the before pseudo-element */
+  clip-path: polygon(
+    0 0,
+    0 100%,
+    100% 0
+  ); /* Clip path for the triangular shape */
+  background-color: #788ec2a1; /* Background color for the triangular shape */
+  width: 2rem; /* Width for the triangular shape */
+  height: 2rem; /* Height for the triangular shape */
+  top: 100%; /* Position below the comment */
+  right: 0; /* Align to the right */
+}
+
+.comment p {
+  color: #ffff; /* Text color for the comment */
+  font-weight: 500; /* Font weight for the comment text */
+  padding: 1rem; /* Padding inside the comment */
+}
